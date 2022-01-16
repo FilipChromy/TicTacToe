@@ -28,138 +28,164 @@ namespace TicTacToe
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonOneText);
-            GameControl.GameStateUpdate(gameState);
-            new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 };
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonOneText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonOneText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonTwoText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonTwoText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonTwoText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonThreeText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonThreeText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonThreeText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonFourText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonFourText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonFourText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonFiveText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonFiveText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonFiveText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonSixText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonSixText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonSixText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonSevenText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonSevenText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonSevenText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonEightText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonEightText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonEightText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            GameControl.PlaceMove(buttonNineText);
-            GameControl.GameStateUpdate(gameState);
-            GameControl.ValidateWinnerX(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.ValidateWinnerO(
-                buttonOneText, buttonTwoText, buttonThreeText,
-                buttonFourText, buttonFiveText, buttonSixText,
-                buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
-            GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            if (buttonNineText.Text.Equals(""))
+            {
+                GameControl.PlaceMove(buttonNineText);
+                GameControl.GameStateUpdate(gameState);
+                GameControl.ValidateWinnerX(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.ValidateWinnerO(
+                    buttonOneText, buttonTwoText, buttonThreeText,
+                    buttonFourText, buttonFiveText, buttonSixText,
+                    buttonSevenText, buttonEightText, buttonNineText, gameState, new List<Button>() { bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9 });
+                GameControl.CheckForTie(AllButtonValues(), gameState, AllButtons());
+            }
         }
 
         private List<Button> AllButtons()
